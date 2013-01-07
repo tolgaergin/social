@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Social Profiles and Sharing jQuery Plugin</title>
+	<meta name="description" content="Social sharing jquery plugin">
+
+	<link rel="stylesheet" href="assets/stylesheets/normalize.css">
+	<link rel="stylesheet" href="assets/stylesheets/arthref.css">
+	<style>
+	.example-site{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('assets/images/ntv-spor.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+	.selectMe{
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		width: 200px;
+		height: 120px;
+		padding: 20px 50px;
+		margin: -80px 0 0 -150px;
+		background: #ccc;
+		border-radius: 5px;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+
+
+<div class="example-site"></div><!--.example-site-->
+
+<div class="selectMe">I'm selectable text. When you select me, I trigger to open SocialShare Window</div>
+
+<div id="menu" style="left:50%; top:0; margin: -125px 0 0 -125px; width:250px; height:250px; background:#f00; border-radius:100%; position:fixed; z-index:11; cursor:pointer;"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="assets/javascripts/arthrefSocialShare.js"></script>
+
+<script>
+	$(document).ready(function () {
+
+		$('#menu').arthrefSocialShare({
+			social: 'blogger,delicious,digg,facebook,friendfeed,google,linkedin,myspace,pinterest,reddit,stumbleupon,tumblr,twitter,windows,yahoo',
+			whenSelect: true
+		});
+
+	});
+
+</script>
+
+</body>
+</html>

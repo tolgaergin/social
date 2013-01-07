@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>#50C1AL Share, #50C1AL Profiles</title>
+	<meta name="description" content="Social sharing and listing social accounts jquery plugin">
+
+	<link rel="stylesheet" href="assets/stylesheets/normalize.css">
+	<link rel="stylesheet" href="assets/stylesheets/example.css">
+
+	<link rel="stylesheet" href="assets/stylesheets/arthref.css">
+
+</head>
+
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11816554-15']);
+  _gaq.push(['_setDomainName', 'tolgaergin.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="container">
+	<h1>#50C1AL</h1>
+
+	<h3>Overview:</h3>
+	<p>
+		To list social accounts or share any page with 46 icons.
+	</p>
+
+	<h3>Demo for social profiles:</h3>
+	<p class="demo">
+		<a href="#" class="btn followSelector">I Follow Rivers</a>
+	</p>
+	<h3>Demo for sharing:</h3>
+		<p class="demo shareSelector">Hi! I'm text and I'm here to be selected. </p>
+
+	
+	<h3>Options for socialProfiles:</h3>
+	<p>
+		<ul>
+			<li><strong>animation:</strong> <br><span>launchpad, launchpadReverse, slideTop, slideRight, slideBottom, slideLeft, chain</span></li>
+			<li><strong>chainAnimationSpeed:</strong> <span>default value: 100</span></li>
+			<li><strong>blur:</strong> makes blur background (only works on -webkit browsers)<br><span>true,false</span></li>
+
+		</ul>
+	</p>
+
+	<h3>Usage for socialProfiles:</h3>
+	<p>
+		Place in your head section
+		<p class="code">&lt;link rel="stylesheet" href="assets/stylesheets/arthref.css"&gt;</p>
+	</p>
+	<p>
+		Write before closing body tag
+		<p class="code">&lt;script src="assets/javascripts/socialProfiles.js"&gt;&lt;/script&gt;</p>
+		<p class="code">
+			$('.selectorClass').socialProfiles({<br>
+				email: 'example@example.com',<br>
+				behance: 'gokhun'<br>
+				facebook: 'tolgaergin',<br>
+				twitter: 'tolgaergin',<br>
+				pinterest: 'tolga',<br>
+				dribbble: 'bbb',<br>
+				scoutzie: 'gokhun-guneyhan'<br>
+			});
+		</p>
+	</p>
+
+	<h3>Options for socialShare:</h3>
+	<p>
+		<ul>
+			<li><strong>social:</strong> you can put comma between each social-service.<br><span>blogger,delicious,digg,facebook,friendfeed,google,<br>
+				linkedin,myspace,pinterest,reddit,stumbleupon,<br>
+				tumblr,twitter,windows,yahoo</span></li>
+
+			<li><strong>animation:</strong> <br><span>launchpad, launchpadReverse, slideTop, slideRight, slideBottom, slideLeft, chain</span></li>
+			<li><strong>chainAnimationSpeed:</strong> <span>default value: 100</span></li>
+			<li><strong>blur:</strong> makes blur images and texts (only works on Chrome)<br><span>true,false</span></li>
+
+			<li><strong>whenSelect:</strong> if you set true, when user select text, sharing box will be opened<br><span>(default: false)</span></li>
+			<li><strong>selectContainer:</strong> To specify a container for selection<br><span>(default: 'body') (alternative: '.anyclass' or '#anyid')</span></li>
+
+			<li><strong>title:</strong> <br><span>(default: document title)</span></li>
+			<li><strong>shareUrl:</strong> <br><span>(default: document url)</span></li>
+			<li><strong>description:</strong> <br><span>(default: document meta description)</span></li>
+			
+		</ul>
+	</p>
+
+	<h3>Usage for socialShare:</h3>
+	<p>
+		Place in your head section
+		<p class="code">&lt;link rel="stylesheet" href="assets/stylesheets/arthref.css"&gt;</p>
+	</p>
+	<p>
+		Write before closing body tag
+		<p class="code">&lt;script src="assets/javascripts/socialShare.js"&gt;&lt;/script&gt;</p>
+		<p class="code">
+			$('.selectorClass').socialShare({<br>
+				social: 'blogger,delicious,digg,facebook,friendfeed,google,<br>
+				linkedin,myspace,pinterest,reddit,stumbleupon,<br>
+				tumblr,twitter,windows,yahoo'<br>
+			});
+		</p>
+	</p>
+
+	<h3>Authors:</h3>
+	<p>
+		Gökhun Güneyhan (Designer)<br>
+		<ul>
+			<li><a href="http://gokhunguneyhan.com" target="_blank">gokhunguneyhan.com</a></li>
+			<li><a href="http://twitter.com/gokhunguneyhan" target="_blank">@gokhunguneyhan</a></li>
+		</ul>
+	</p>
+	<p>
+		Tolga Ergin (Developer)<br>
+		<ul>
+			<li><a href="http://tolgaergin.com" target="_blank">tolgaergin.com</a></li>
+			<li><a href="http://twitter.com/tolgaergin" target="_blank">@tolgaergin</a></li>
+		</ul>
+	</p>
+	<a href="https://github.com/tolgaergin/social"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+</div><!--.container-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="assets/javascripts/socialShare.js"></script>
+<script src="assets/javascripts/socialProfiles.js"></script>
+<script>
+	$(document).ready(function () {
+
+		$('.shareSelector').socialShare({
+			social: 'facebook,twitter,google,pinterest,stumbleupon,delicious,friendfeed,digg,linkedin',
+			whenSelect: true,
+			selectContainer: '.shareSelector',
+			blur: true
+		});
+
+		$('.followSelector').socialProfiles({
+			animation: 'chain',
+			blur: true,
+			facebook: 'tolgaergin',
+			google: '102336483082058519992',
+			twitter: 'tolgaergin',
+			pinterest: 'tolga',
+			dribbble: 'bbb',
+			behance: 'gokhun',
+			scoutzie: 'gokhun-guneyhan'
+		});
+	});
+</script>
+
+</body>
+</html>
