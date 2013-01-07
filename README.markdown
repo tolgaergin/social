@@ -6,8 +6,7 @@
 
 ## Usage
 
-You need to link stylesheet
-	<link rel="stylesheet" href="assets/stylesheets/arthref.min.css">
+	<link rel="stylesheet" href="/assets/stylesheets/arthref.min.css">
 
 #### If you use the plugin in order to link to your profiles, you need to load jQuery first then arthrefSocialProfiles.js
 	<script src="/assets/javascripts/socialProfiles.min.js"></script>
