@@ -1,21 +1,20 @@
-# Social Profiles and Sharing jQuery Plugin
+# jQuery Plugin for Listing accounts and Sharing page 
 
-To list social accounts or share any page with 46 icons.
-
-* Share example: http://tolgaergin.com/files/arthref/social-share.html
-* Social profiles: http://tolgaergin.com/files/arthref/social-profiles.html
+* Both example: http://tolgaergin.com/files/social/index.html
+* For sharing example: http://tolgaergin.com/files/social/social-share.html
+* For listing social profiles: http://tolgaergin.com/files/social/social-profiles.html
 
 ## Usage
 
 You need to link stylesheet
-	<link rel="stylesheet" href="assets/stylesheets/arthref.css">
+	<link rel="stylesheet" href="assets/stylesheets/arthref.min.css">
 
 #### If you use the plugin in order to link to your profiles, you need to load jQuery first then arthrefSocialProfiles.js
-	<script src="assets/javascripts/arthrefSocialProfiles.js"></script>
+	<script src="/assets/javascripts/socialProfiles.min.js"></script>
 
 Then initialize the variables
 
-	$('#clickable').arthrefSocialProfiles({
+	$('#clickable').socialProfiles({
 		email: 'example@example.com',
 		facebook: 'tolgaergin',
 		twitter: 'tolgaergin',
@@ -25,20 +24,24 @@ Then initialize the variables
 	});
 
 #### If you use the plugin in order to share pages, you need to load jQuery first then arthrefSocialShare.js
-	<script src="assets/javascripts/arthrefSocialShare.js"></script>
+	<script src="/assets/javascripts/socialShare.min.js"></script>
 
 Then initialize the variables
 
-	$('#clickable').arthrefSocialShare({
+	$('#clickable').socialShare({
 		social: 'blogger,delicious,digg,facebook,google,linkedin,myspace,reddit,stumbleupon,tumblr,twitter,windows,yahoo'
 	});
 
-## Directory structure
+## Directory and files
 
 	/assets
 		/stylesheets
+			arthref.min.css
 		/images
+			social-sprite.png
 		/javascripts
+			socialProfiles.min.js
+			socialShare.min.js
 
 ## Authors
 
