@@ -40,7 +40,6 @@ $('#clickable').socialShare({
       var beforeDivs = '<div class="arthref arthrefSocialShare"><div class="overlay '+options.animation+'"><div class="icon-container"><div class="centered"><ul>';
       var afterDivs = '</ul></div></div></div></div>';
 
-      createContainer();
 
       return this.each(function() {
           var o = options;
@@ -51,13 +50,12 @@ $('#clickable').socialShare({
               var selection = getSelected();
               if(selection && (selection = new String(selection).replace(/^\s+|\s+$/g,''))) {
                 options.title = selection;
-                createContainer();
-                obj.trigger('click');
               }
             });
           }
 
           obj.click(function() {
+            createContainer();
             if(o.blur && $.browser.webkit) { $('.arthrefSocialShare').find('.overlay').addClass('opaque'); $('body').children().not('.arthref, script').addClass('blurred'); }
             $('.arthrefSocialShare').find('.overlay').css('display','block');
             setTimeout(function(){
@@ -134,4 +132,3 @@ $('#clickable').socialShare({
 
   });
 })(jQuery);
-
