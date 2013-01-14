@@ -19,8 +19,14 @@ Then initialize the variables
 		twitter: 'tolgaergin',
 		pinterest: 'tolga',
 		dribbble: 'bbb',
-		skype: 'tolgaergin.com'
+		skype: 'tolgaergin.com',
+		linkedin: 'tr.linkedin.com/in/tolgaergin'
 	});
+
+(When listing your social accounts,
+for some websites such as LinkedIn, Evernote, Paypal, Windows, Flud, AIM, Yahoo
+you need to write url address without "http://" or "https://"
+Because, these websites doesnt have regular url.)
 
 #### If you use the plugin in order to share pages, you need to load jQuery first then arthrefSocialShare.js
 	<script src="/assets/javascripts/socialShare.min.js"></script>
