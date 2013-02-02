@@ -148,10 +148,10 @@ $('#clickable').socialProfiles({
           var ulElement = overlay.find('ul');
           var liElements = ulElement.find('li');
 
-          if(o.blur && $.browser.webkit) overlay.addClass('opaque');
+          if(o.blur) overlay.addClass('opaque');
 
           obj.click(function() {
-            if(o.blur && $.browser.webkit) body.children().not('.arthref, script').addClass('blurred');
+            if(o.blur) body.children().not('.arthref, script').addClass('blurred');
             overlay.css('display','block');
             setTimeout(function(){
               overlay.addClass('active');
@@ -161,7 +161,7 @@ $('#clickable').socialProfiles({
           });
 
           overlay.click(function() {
-            if(o.blur && $.browser.webkit) body.children().removeClass('blurred');
+            if(o.blur) body.children().removeClass('blurred');
             overlay.removeClass('active');
             ulElement.removeClass('active');
             setTimeout(function(){
