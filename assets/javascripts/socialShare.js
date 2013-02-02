@@ -56,7 +56,7 @@ $('#clickable').socialShare({
 
           obj.click(function() {
             createContainer();
-            if(o.blur && $.browser.webkit) { $('.arthrefSocialShare').find('.overlay').addClass('opaque'); $('body').children().not('.arthref, script').addClass('blurred'); }
+            if(o.blur) { $('.arthrefSocialShare').find('.overlay').addClass('opaque'); $('body').children().not('.arthref, script').addClass('blurred'); }
             $('.arthrefSocialShare').find('.overlay').css('display','block');
             setTimeout(function(){
               $('.arthrefSocialShare').find('.overlay').addClass('active');
@@ -65,8 +65,8 @@ $('#clickable').socialShare({
             },0);
           });
 
-          $('.arthrefSocialShare').find('.overlay').live('click',function() {
-            if(o.blur && $.browser.webkit) $('body').children().removeClass('blurred');
+          $( document ).on( "click", ".arthrefSocialShare .overlay", function( e ) {
+            if(o.blur) $('body').children().removeClass('blurred');
             $('.arthrefSocialShare').find('.overlay').removeClass('active');
             $('.arthrefSocialShare').find('ul').removeClass('active');
             setTimeout(function(){
