@@ -65,7 +65,7 @@ $('#clickable').socialShare({
             },0);
           });
 
-          $( document ).on( "click", ".arthrefSocialShare .overlay", function( e ) {
+          $( document ).on( "click touchstart", ".arthrefSocialShare .overlay", function( e ) {
             if(o.blur) $('body').children().removeClass('blurred');
             $('.arthrefSocialShare').find('.overlay').removeClass('active');
             $('.arthrefSocialShare').find('ul').removeClass('active');
