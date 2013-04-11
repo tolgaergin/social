@@ -160,7 +160,7 @@ $('#clickable').socialProfiles({
             },0);
           });
 
-          overlay.click(function() {
+          $( document ).on( "click touchstart", ".arthrefSocialProfiles .overlay", function( e ) {
             if(o.blur) body.children().removeClass('blurred');
             overlay.removeClass('active');
             ulElement.removeClass('active');
