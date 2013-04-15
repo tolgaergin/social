@@ -75,7 +75,7 @@ $('#clickable').socialShare({
             },300);
           });
 
-          $('.arthrefSocialShare').find('li').click(function(e) {
+          $( document ).on( "click touchstart", ".arthrefSocialShare li", function( e ) {
             e.stopPropagation();
           });
 
