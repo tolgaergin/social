@@ -119,7 +119,7 @@ $('#clickable').socialShare({
         var sites = options.social.split(',');
         var listItem = '';
         for (var i = 0; i <= sites.length-1; i++) {
-          siteSettings[ sites[i] ]['url'] = siteSettings[ sites[i] ]['url'].replace('{t}',encodeURI(options.title)).replace('{u}',encodeURI(options.shareUrl)).replace('{d}',encodeURI(options.description));
+          siteSettings[ sites[i] ]['url'] = siteSettings[ sites[i] ]['url'].replace('{t}',encodeURIComponent(options.title)).replace('{u}',encodeURI(options.shareUrl)).replace('{d}',encodeURIComponent(options.description));
           listItem += '<li><a href="'+siteSettings[ sites[i] ]['url'] +'" target="_blank" rel="nofollow" class="'+siteSettings[ sites[i] ]['className'] +'"><span></span></a><span>'+siteSettings[ sites[i] ]['text'] +'</span></li>';
         };
 
